@@ -23,7 +23,7 @@ You can download the latest CSV at the [North American Number Plan Adminstrator 
 
 If everything goes well then pump the version and upload back to github. At Remind we need to update https://github.com/remind101/e164.rb based off this project.
 
-Then update the following projects: r101-postoffice, r101-vacuum, r101-api, and r101-whitepages in order to successfully update our infrastructure together (and they must be done together).
+Then update the following projects IN ORDER: r101-whitepages, r101-postoffice, r101-api, and r101-vacuum in order to successfully update our infrastructure.
 
 ## Examples
 
