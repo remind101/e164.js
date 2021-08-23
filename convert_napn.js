@@ -32,10 +32,6 @@ const COUNTRY_TO_EXPECTED_FORMAT = {
 // Making sure that we report these as inside the US so we can use them as valid numbers.  Everything that isn't "US" or "CA" is excluded from being contactable.
 const LOCATION_OVERRIDE = {
   "PUERTO RICO": ["US", "Puerto Rico"],
-  USVI: ["US", "Virgin Islands, US"],
-  GU: ["US", "Guam"],
-  AS: ["US", "American Samoa"],
-  CNMI: ["US", "Northern Mariana Islands"],
 };
 
 console.log("reading CSV file");
