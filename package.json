@@ -16,19 +16,28 @@
     "email": "pdeschen+e164.js@gmail.com",
     "url": "http://github.com/pdeschen/e164.js/issues"
   },
-  "main": "e164",
+  "main": "dist/e164.js",
+  "types": "dist/e164.d.ts",
   "engines": {
     "node": ">=12.7.0"
   },
   "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.14.1",
     "csvlint": "^0.2.2",
     "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "gulp-uglify": "~3.0.2",
     "lodash": "^4.17.15",
-    "neat-csv": "^5.2.0"
+    "merge-stream": "^2.0.0",
+    "neat-csv": "^5.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "scripts": {
-    "test": "node ./test/test.js"
+    "test": "ts-node ./test/test.ts",
+    "build": "npx gulp build",
+    "prepublishOnly": "npm run build"
   },
   "contributors": [
     "Pascal Deschenes <pdeschen@rassemblr.com> (http://blog.rassemblr.com)",
