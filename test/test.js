@@ -48,4 +48,14 @@ assert.deepEqual(
 );
 assert.deepEqual(undefined, e164.lookup("0"));
 
+[
+  "1357", "1436", "1457", "1465", "1471", "1483", "1621",
+  "1624", "1686", "1729", "1738", "1748", "1837", "1924",
+].forEach(function (prefix) {
+  assert.deepEqual(
+    { prefix: prefix, country: "United States", code: "US" },
+    e164.lookup(prefix + "5550100")
+  );
+});
+
 console.log("ok");
